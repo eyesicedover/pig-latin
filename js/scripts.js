@@ -6,24 +6,41 @@ $(document).ready(function(){
     var vowels = ["a", "e", "i", "o", "u"];
     var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
     var result = "";
-    var consonant = ""
+    var consonant = "";
+    var extract = "";
 
-    //number checker
     for (var h = 0; h < numbers.length; h++) {
       if (sentence.charAt(0) ===  numbers[h]) {
         result = sentence;
-      }
-    }
-
-    //vowel checker
-    for (var i = 0; i < vowels.length; i++) {
-      if (sentence.charAt(0) === vowels[i]) {
-        result = sentence.concat("way");
+        break;
       } else {
-        consonant = sentence.charAt(0);
+        for (var i = 0; i < vowels.length; i++) {
+          if (sentence.charAt(0) === vowels[i]) {
+            result = sentence.concat("way");
+          } else {
+            consonant = sentence.charAt(0);
+            extract = sentence.slice(1);
+            result = extract.concat(consonant, "ay");
+          }
+        }
       }
     }
+    debugger;
+    for (var l = 0; l < sentence.length; l++) {
+  	  for (var k=0; k <vowels.length; k++) {
+  		  if (sentence.charAt(l) === vowels[k]) {
+      	  var sentenceIndex = l;
+          var breakCheck = true;
+          debugger;
+          break;
+        } else {
+          continue;
+        }
+      }
+      if (breakCheck === true) {break;}
+    }
 
+    alert(sentenceIndex);
 
     $(".output").text(result);
   });
