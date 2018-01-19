@@ -1,14 +1,18 @@
-# Pig Latin
+# _Pig Latin_
 
-## Kaila Goff and Stephanie Faber version 1.0, 1/18/2018
+## _Kaila Goff_ and _Stephanie Faber_ version 1.0, 1/18/2018
 
-### A website to translate sentences into pig latin.
+### _Description_
 
-#### no known bugs at this time
+A website to translate sentences input by the user into pig latin. The site has a title exclaiming Pig Latin, and there is a field to type words with a submit button below it.
+
+#### _Known Bugs_
+
+No known bugs at this time
 
 # Setup/Installation
-###### _clone from GitHub_
-###### _<a href="https://kailagoff.github.io/pig-latin/">Program Language</a>_
+###### Clone from GitHub
+###### Open in your preferred browser
 
 ## Technologies used
 
